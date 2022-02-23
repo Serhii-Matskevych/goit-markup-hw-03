@@ -9,7 +9,6 @@
 }
 /* основной фон */
 body {
-  background-color: #ececec;
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
@@ -56,6 +55,8 @@ ul {
 }
 /* ссылки */
 .auth-link {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
