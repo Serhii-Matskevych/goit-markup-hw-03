@@ -1,3 +1,4 @@
+
 :root {
   --primary-text-color: #212121;
   --title-text-color: #757575;
@@ -12,8 +13,22 @@ body {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+
+  
+}
+/* контейнер */
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+ 
+  
+
 }
 /* логотип */
+
 .logo {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
@@ -29,10 +44,15 @@ body {
 .logo-footer {
   color: var(--footer-logo-color);
 }
+
 /* список */
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+
 }
+
 /* навигацыя сайта */
 .link {
   color: var(--primary-text-color);
@@ -41,6 +61,8 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  outline: 2px solid tomato;
+ 
 }
 /* состояние наведения */
 .link:hover {
@@ -63,7 +85,12 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  outline: 2px solid tomato;
+  
 }
+
+
+
 /* состояние наведения */
 .auth-link:hover {
   color: var(--accent-color);
@@ -75,18 +102,26 @@ ul {
 /* герой */
 .hero {
   background-color: var(--header-logo-color);
-}
+  text-align: center;
+  height: 600px;
+  }
+
+
 .hero-title {
   color: var(--footer-logo-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 30px;
+ 
 }
 /* кнопка веб студии */
-.button-primery {
+.button-primery { 
+  display: inline-block;
+  padding: 10px 32px;
   cursor: pointer;
   font-family: Roboto;
   color: #fff;
@@ -94,25 +129,25 @@ ul {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: transparent;
 }
 .visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
+margin-top: 0;
+margin-bottom: 94px;
 }
+
+
 .section-title {
   color: var(--primary-text-color);
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+ 
+  
 }
 /* цвет абзаца */
 .section-text {
@@ -121,6 +156,7 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-top: 0;
 }
 /* чем мы занимаемся */
 .development {
@@ -164,6 +200,9 @@ ul {
 
 /* кнопки портфолио */
 .button-secondary {
+  display: inline-block;
+  padding: 6px 22px;
+  min-width: 73px;
   cursor: pointer;
   color: var(--primary-text-colora);
   background-color: var(--primery-bg-color);
@@ -172,6 +211,10 @@ ul {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  border-radius: 4px;
+  text-align: center;
+  border: transparent
+  
 }
 /* состояние ховер */
 .button-secondary:hover {
