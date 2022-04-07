@@ -22,9 +22,6 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.page-header { 
-  outline: 2px solid tomato;
-}
 /* логотип */
 
 .logo {
@@ -34,55 +31,22 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  display: flex;
+  margin-top: 24px;
 }
+
 .logo-header {
   color: var(--header-logo-color);
 }
-
-.logo-footer {
-  color: var(--footer-logo-color);
+/* навигацыя хедера */
+.site-nav-list {
+  display: flex;
+  padding-left: 215px;
 }
-
-/* список */
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.auth-nav-list {
+  display: flex;
+  justify-content: end;
 }
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0;
-  padding: 0;
-}
-
-/* навигацыя сайта */
-.link {
-  color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
- 
- 
-}
-/* состояние наведения */
-.link:hover {
-  color: var(--accent-color);
-}
-.link.current {
-  color: var(--accent-color);
-}
-/* состояние в фокусе */
-.link:focus {
-  color: var(--accent-color);
-}
-
 /* ссылки */
 .auth-link {
   font-family: Roboto, sans-serif;
@@ -93,18 +57,38 @@ h6 {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  
-  
 }
-
-
-
 /* состояние наведения */
 .auth-link:hover {
   color: var(--accent-color);
 }
+
 /* состояние в фокусе */
 .auth-link:focus {
+  color: var(--accent-color);
+}
+/* навигацыя сайта */
+.link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  justify-content: center;
+  padding-left: 50px;
+}
+/* состояние наведения */
+.link:hover {
+  color: var(--accent-color);
+}
+
+.link.current {
+  color: var(--accent-color);
+}
+
+/* состояние в фокусе */
+.link:focus {
   color: var(--accent-color);
 }
 /* герой */
@@ -114,10 +98,7 @@ h6 {
   height: 600px;
   padding-top: 200px;
   padding-bottom: 280px;
-  
 }
-
-
 .hero-title {
   color: var(--footer-logo-color);
   font-weight: 900;
@@ -127,10 +108,9 @@ h6 {
   text-transform: uppercase;
   margin-top: 0px;
   margin-bottom: 30px;
- 
 }
 /* кнопка веб студии */
-.button-primery { 
+.button-primery {
   display: inline-block;
   padding: 10px 32px;
   cursor: pointer;
@@ -143,17 +123,9 @@ h6 {
   border-radius: 4px;
   border: transparent;
 }
-.visually-hidden {
-margin-top: 0;
-margin-bottom: 94px;
+.options {
+  display: flex;
 }
-.section {
-  border: 1px solid tomato; 
-  margin-bottom: 94px;
-}
-
-
-
 .section-title {
   color: var(--primary-text-color);
   font-size: 14px;
@@ -162,10 +134,8 @@ margin-bottom: 94px;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 10px;
- 
-  
+  padding-left: 30px;
 }
-/* цвет абзаца */
 .section-text {
   color: var(--title-text-color);
   font-family: Roboto;
@@ -173,6 +143,7 @@ margin-bottom: 94px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-top: 0;
+  padding-left: 30px;
 }
 /* чем мы занимаемся */
 .development {
@@ -184,10 +155,6 @@ margin-bottom: 94px;
 .development-photo {
   border: 1px solid tomato;
   margin-bottom: 94px;
-}
-.command-photo {
-  border: 1px solid tomato;
- 
 }
 /* наша команда */
 .command {
@@ -211,6 +178,79 @@ margin-bottom: 94px;
   line-height: 1.18;
   letter-spacing: 0.03em;
 }
+.command-photo {
+  border: 1px solid tomato;
+  background-color: var(--primery-bg-color);
+}
+
+.photo-card {
+  display: flex;
+  padding-left: 30px;
+}
+
+
+
+
+
+
+
+.logo-footer {
+  color: var(--footer-logo-color);
+}
+
+/* список */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  padding: 0;
+}
+
+.about-work {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 94px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.visually-hidden {
+margin-top: 0;
+margin-bottom: 94px;
+}
+
+
+
+
+
+/* цвет абзаца */
+
+
+
+
+
+
 .geolocation {
   font-family: Roboto;
   font-style: normal;
@@ -240,6 +280,9 @@ margin-bottom: 94px;
   text-align: center;
   border: transparent
   
+}
+.button-list {
+  display: flex;
 }
 /* состояние ховер */
 .button-secondary:hover {
