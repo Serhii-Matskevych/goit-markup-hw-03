@@ -31,8 +31,10 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+}
+.main-nav {
   display: flex;
-  margin-top: 24px;
+  align-items: center;
 }
 
 .logo-header {
@@ -41,12 +43,31 @@ body {
 /* навигацыя хедера */
 .site-nav-list {
   display: flex;
-  padding-left: 215px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 93px;
+}
+.site-nav-list .item {
+
+  margin-right: 50px;
+}
+.site-nav-list .item:last-child {
+  margin-right: 0;
 }
 .auth-nav-list {
   display: flex;
-  justify-content: end;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  
 }
+.auth-nav-list .item +.item {
+  outline: 1px solid tomato;
+  background-color: tomato;
+  margin-left: 50px;
+}
+
+
 /* ссылки */
 .auth-link {
   font-family: Roboto, sans-serif;
@@ -69,22 +90,24 @@ body {
 }
 /* навигацыя сайта */
 .link {
+  display: block;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  justify-content: center;
-  padding-left: 50px;
+
+  
 }
 /* состояние наведения */
 .link:hover {
   color: var(--accent-color);
 }
 
-.link.current {
+.link.current{
   color: var(--accent-color);
+  display: block;
 }
 
 /* состояние в фокусе */
@@ -111,8 +134,7 @@ body {
 }
 /* кнопка веб студии */
 .button-primery {
-  display: inline-block;
-  padding: 10px 32px;
+  display: inline-block;  
   cursor: pointer;
   font-family: Roboto;
   color: #fff;
@@ -123,21 +145,32 @@ body {
   border-radius: 4px;
   border: transparent;
 }
-.options {
+
+.feature-list {
   display: flex;
+  margin-top: 0;
+}
+.feature-list.item {
+  width: 270px;
+  background-color: tomato;
 }
 .section-title {
   color: var(--primary-text-color);
+  
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-top: 0;
   margin-bottom: 10px;
-  padding-left: 30px;
+  margin-right: 30px;
+  outline: 1px solid tomato;
 }
+
+
+
 .section-text {
   color: var(--title-text-color);
+ 
   font-family: Roboto;
   font-size: 14px;
   line-height: 1.71;
@@ -202,7 +235,7 @@ body {
 ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+
 }
 p,
 h1,
@@ -211,7 +244,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
+  margin: 0;
   padding: 0;
 }
 
