@@ -150,6 +150,9 @@ body {
 .feature-list {
   display: flex;
   margin-top: 0;
+  margin-bottom: 0;
+ padding-top: 94px;
+ padding-bottom: 94px; 
 }
 
 .feature-list .item {
@@ -193,7 +196,8 @@ body {
   margin-bottom: 50px;
 }
 .development-photo {
-  margin-bottom: 94px;
+
+padding-bottom: 94px;
 }
 .photo-list {
   display: flex;
@@ -213,6 +217,7 @@ body {
   justify-content: center;
 margin-top: 0;
 margin-bottom: 0;
+padding-bottom: 94px;
 
 }
 .photo-card .item {
@@ -227,6 +232,7 @@ margin-bottom: 0;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  padding-top: 94px;
   margin-bottom: 50px;
 }
 /* имя сотрудника */
@@ -295,7 +301,7 @@ h6 {
 
 .visually-hidden {
 margin-top: 0;
-margin-bottom: 94px;
+
 }
 
 
@@ -314,7 +320,6 @@ margin-bottom: 94px;
   font-style: normal;
   font-weight: normal;
   color: var(--footer-logo-color);
-
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -336,12 +341,23 @@ margin-bottom: 94px;
   letter-spacing: 0.03em;
   border-radius: 4px;
   text-align: center;
-  border: transparent
+  border: transparent;
   
 }
 .button-list {
   display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 94px;
+  justify-content: center;
 }
+.button-list .item {
+  margin-right: 8px;
+}
+.button-list .item:last-child{
+  margin-right: 0;
+}
+
 /* состояние ховер */
 .button-secondary:hover {
   color: #fff;
@@ -370,7 +386,6 @@ margin-bottom: 94px;
 .footer-page {
   background-color: var(--footer-bg-color);
   height: 252px;
-  padding-top: 60px;
-  padding-left: 215px;
+
 }
 
