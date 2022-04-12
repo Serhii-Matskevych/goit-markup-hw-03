@@ -18,15 +18,25 @@ body {
 }
 /* контейнер */
 .container {
-  width: 1230px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* логотип */
 .page-header {
   border-bottom: 1px solid #ECECEC;;
+}
+.kontainer-header {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .logo {
@@ -37,19 +47,19 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-.main-nav {
-  display: flex;
-  align-items: center;
-}
-
 .logo-header {
   color: var(--header-logo-color);
 }
+.main-nav {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+
 /* навигацыя хедера */
 .site-nav-list {
   display: flex;
-  margin-top: 0px;
-  margin-bottom: 0px;
   margin-left: 93px;
 }
 .site-nav-list .item {
@@ -61,10 +71,7 @@ body {
 }
 .auth-nav-list {
   display: flex;
-  margin-top: 0px;
-  margin-bottom: 0px;
   margin-left: auto;
-  
   
 }
 .auth-nav-list .item +.item {
@@ -122,10 +129,11 @@ body {
 /* герой */
 .hero {
   background-color: var(--header-logo-color);
+  background-image:url(../img-home-work2/);
   text-align: center;
   height: 600px;
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
 }
 .hero-title {
   color: var(--footer-logo-color);
@@ -134,7 +142,6 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-top: 0px;
   margin-bottom: 30px;
 }
 /* кнопка веб студии */
@@ -149,13 +156,11 @@ body {
   letter-spacing: 0.06em;
   border-radius: 4px;
   border: transparent;
+  
 }
 .feature-list {
   display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
- padding-top: 94px;
- padding-bottom: 94px; 
+
 }
 
 .feature-list .item {
@@ -198,14 +203,12 @@ body {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
-.development-photo {
-
-padding-bottom: 94px;
+img {
+  display: block;
+  max-width: 100%;
 }
 .photo-list {
   display: flex;
-  margin-top: 0;
-  justify-content: center;
 }
 
 .photo-list .item {
@@ -216,12 +219,16 @@ padding-bottom: 94px;
   margin-right: 0px;
 }
 .photo-card {
+ 
   display: flex;
-  justify-content: center;
-margin-top: 0;
-margin-bottom: 0;
-padding-bottom: 94px;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+0px 1px 1px rgba(0, 0, 0, 0.14),
+0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 
+}
+.kontainer-photo {
+  background-color: var(--primery-bg-color);
 }
 .photo-card .item {
     margin-right: 30px;
@@ -237,6 +244,10 @@ padding-bottom: 94px;
   letter-spacing: 0.03em;
   padding-top: 94px;
   margin-bottom: 50px;
+}
+.card-item {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 /* имя сотрудника */
 .name {
@@ -254,21 +265,26 @@ padding-bottom: 94px;
   letter-spacing: 0.03em;
   text-align: center;
 }
-.command-photo {
-  background-color: var(--primery-bg-color);
-}
+
 .project {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 94px;
+ 
 }
 .project .item {
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid #EEEEEE;
+  
  
+}
+.card-project {
+ padding-top: 20px;
+ padding-bottom: 20px;
+ padding-left: 24px;
+ padding-right: 24px;
+  border-bottom: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
 }
 .project .item:nth-child(3n) {
   margin-right: 0;
@@ -290,9 +306,10 @@ padding-bottom: 94px;
 /* список */
 ul {
   list-style: none;
-  padding: 0;
-
+    margin: 0;
+    padding: 0;
 }
+
 p,
 h1,
 h2,
@@ -320,8 +337,16 @@ h6 {
 
 
 .visually-hidden {
-margin-top: 0;
-
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 
@@ -366,10 +391,8 @@ margin-top: 0;
 }
 .button-list {
   display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 94px;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .button-list .item {
   margin-right: 8px;
@@ -393,26 +416,32 @@ margin-top: 0;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  text-align: center;
   margin-top: 20px;
   margin-bottom: 4px;
+  color: var(--primary-text-color);
 }
 .card-text {
   color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  text-align: center;
+  
   
 }
 
 .footer-page {
   background-color: var(--footer-bg-color);
-  height: 252px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
 }
-
-.footer-container {
-padding-top: 60px;
-padding-left: 215px;
+.footer-nav-list {
+ 
+  margin-top: 20px;
+}
+.footer-nav-list .item {
+  margin-bottom: 9px;
+}
+.footer-nav-list .item:last-child{
+  margin-bottom: 0px;
 }
