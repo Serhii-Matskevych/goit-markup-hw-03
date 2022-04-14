@@ -130,11 +130,12 @@ body {
 /* герой */
 .hero {
   background-color: var(--header-logo-color);
-  background-image:url(../img-home-work2/);
+ background-image: url(../img-home-work2/Img9.jpg);
   text-align: center;
   height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  
 }
 .hero-title {
   color: var(--footer-logo-color);
